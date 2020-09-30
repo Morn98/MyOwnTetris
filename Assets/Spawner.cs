@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour
 
     public GameObject[] groups;
 
-    void SpawnNext()
+    public void spawnNext()
     {
         int rand = Random.Range(0, groups.Length);
 
@@ -16,6 +16,6 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-        SpawnNext();
+        spawnNext();
     }
 }
